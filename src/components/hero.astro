@@ -3,6 +3,7 @@ import { Picture } from "astro:assets";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+import whatsappImage from "assets/whatsapp.png";
 ---
 
 <main
@@ -31,7 +32,7 @@ import { Icon } from "astro-icon/components";
 
       Just send your PDF via <strong>WhatsApp</strong> or <strong
         >Telegram</strong
-      >, and I’ll transform it into easy-to-read bullet points.<br />
+      >, and I'll transform it into easy-to-read bullet points.<br />
       <br />No fuss, no confusion—just clear, concise information that gets
       straight to the point.
       <br /><br />
@@ -42,26 +43,19 @@ import { Icon } from "astro-icon/components";
         >
       </p>
     </p>
+
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="https://wa.me/+12895441110"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
         style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        class="flex gap-1 items-center justify-center bg-white text-black">
+        <img
+          src={whatsappImage.src}
+          alt="WhatsApp"
+          class="w-6 h-6 object-contain"
+        />
+        Click to Start!
       </Link>
     </div>
   </div>
