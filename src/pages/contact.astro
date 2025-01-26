@@ -10,32 +10,39 @@ import { Icon } from "astro-icon/components";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="desc">We are here to help.</Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Ahsan</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 animate-fade-in">
+      <div class="space-y-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight">
+          Get in Touch
+        </h2>
+        <p class="text-xl leading-relaxed text-gray-700">
+          Have a question, project idea, or just want to connect? I'm here to help! Reach out through the form or use the contact details below.
         </p>
-        <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>Vaughan, ON</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:a2ashraf@gmail.com"
-              >a2ashraf@gmail.com</a>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (289) 544 1110">+1 (289) 544 1110</a
-            >
+        <div class="space-y-4">
+          <div class="flex items-center space-x-4 text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            <Icon class="w-6 h-6" name="uil:map-marker" />
+            <span class="text-lg">Vaughan, ON</span>
           </div>
+          <a 
+            href="mailto:a2ashraf@gmail.com" 
+            class="flex items-center space-x-4 text-gray-700 hover:text-blue-600 transition-colors duration-300 group"
+          >
+            <Icon class="w-6 h-6" name="uil:envelope" />
+            <span class="text-lg group-hover:underline">a2ashraf@gmail.com</span>
+          </a>
+          <a 
+            href="tel:+1 (289) 544 1110" 
+            class="flex items-center space-x-4 text-gray-700 hover:text-blue-600 transition-colors duration-300 group"
+          >
+            <Icon class="w-6 h-6" name="uil:phone" />
+            <span class="text-lg group-hover:underline">+1 (289) 544 1110</span>
+          </a>
         </div>
       </div>
-      <div>
+      <div class="bg-white shadow-xl rounded-xl p-8 border border-gray-100">
         <Contactform />
       </div>
     </div>

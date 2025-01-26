@@ -6,56 +6,52 @@ import { Icon } from "astro-icon/components";
 import whatsappImage from "assets/whatsapp.png";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 container mx-auto px-4">
+  <div class="py-6 md:order-1 hidden md:block animate-float">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="Legal document transformation"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
+      class="rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300"
     />
   </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Understand Terms and Conditions in any language
+  <div class="space-y-6">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+      Decode Legal Complexity in Seconds
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      <h2>Simplify Legal Jargon with Ease</h2>
-
-      Tired of wading through lengthy PDFs filled with dense legal terms and
-      conditions?<br />
-      <br />Let me simplify it for you!<br /><br />
-
-      Just send your PDF via <strong>WhatsApp</strong> or <strong
-        >Telegram</strong
-      >, and I'll transform it into easy-to-read bullet points.<br />
-      <br />No fuss, no confusion—just clear, concise information that gets
-      straight to the point.
-      <br /><br />
-
-      <p>
-        <em
-          >Empowering you to understand complex documents, one PDF at a time!</em
-        >
-      </p>
+    <p class="text-xl text-gray-600 max-w-xl leading-relaxed">
+      Overwhelmed by dense legal documents? We transform complex PDFs into crystal-clear, easy-to-understand summaries.
     </p>
+    
+    <div class="space-y-4">
+      <div class="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="text-gray-700">Instant PDF Simplification</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="text-gray-700">Multi-Language Support</span>
+      </div>
+    </div>
 
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
       <Link
         href="https://wa.me/+12895441110"
         target="_blank"
-        style="outline"
-        class="flex gap-1 items-center justify-center bg-white text-black">
+        class="px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
         <img
           src={whatsappImage.src}
           alt="WhatsApp"
           class="w-6 h-6 object-contain"
         />
-        Click to Start!
+        <span>Start with WhatsApp</span>
       </Link>
     </div>
   </div>
