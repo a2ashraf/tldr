@@ -1,9 +1,8 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import heroImage from "../assets/hero.png";
 import Link from "../components/ui/link.astro";
 import { Icon } from "astro-icon/components";
-import whatsappImage from "assets/whatsapp.png";
 ---
 
 <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 container mx-auto px-4">
@@ -43,15 +42,13 @@ import whatsappImage from "assets/whatsapp.png";
 
     <div class="mt-8 flex flex-col sm:flex-row gap-4">
       <Link
-        href="https://wa.me/+12895441110"
+        href="https://t.me/C_TLDR_bot"
         target="_blank"
-        class="px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
-        <img
-          src={whatsappImage.src}
-          alt="WhatsApp"
-          class="w-6 h-6 object-contain"
-        />
-        <span>Start with WhatsApp</span>
+        class="px-6 py-3 bg-[#229ED9] text-white rounded-full hover:bg-[#1C93E3] transition-colors duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221-1.427 6.717c-.1.473-.363.588-.729.367l-2.168-1.601-1.045 1.010c-.116.116-.213.213-.436.213l.156-2.225 4.053-3.656c.176-.156-.038-.241-.269-.085l-5.01 3.15-2.168-.676c-.463-.146-.475-.463.096-.723l8.455-3.265c.399-.144.763.096.588.72z"/>
+        </svg>
+        <span>Start with Telegram</span>
       </Link>
     </div>
   </div>
