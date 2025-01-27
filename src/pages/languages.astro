@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+
+const languages = [
+  { name: "English", code: "en" },
+  { name: "Spanish", code: "sp" },
+  { name: "French", code: "fr" },
+  { name: "German", code: "de" },
+  { name: "Italian", code: "it" },
+  { name: "Portuguese", code: "pt" },
+  { name: "Russian", code: "ru" },
+  { name: "Chinese", code: "zh" },
+  { name: "Japanese", code: "ja" },
+  { name: "Korean", code: "ko" },
+  { name: "Hindi", code: "hi" },
+  { name: "Arabic", code: "ar" },
+  { name: "Urdu", code: "ur" },
+  { name: "Dutch", code: "nl" },
+  { name: "Greek", code: "el" },
+  { name: "Swedish", code: "sv" },
+  { name: "Danish", code: "da" },
+  { name: "Norwegian", code: "no" },
+  { name: "Finnish", code: "fi" },
+  { name: "Polish", code: "pl" },
+  { name: "Turkish", code: "tr" },
+  { name: "Thai", code: "th" },
+  { name: "Vietnamese", code: "vi" },
+  { name: "Indonesian", code: "id" },
+  { name: "Malay", code: "ms" },
+  { name: "Bengali", code: "bn" },
+  { name: "Tamil", code: "ta" },
+  { name: "Telugu", code: "te" },
+  { name: "Marathi", code: "mr" },
+  { name: "Punjabi", code: "pa" },
+  { name: "Gujarati", code: "gu" },
+  { name: "Kannada", code: "kn" },
+  { name: "Malayalam", code: "ml" },
+  { name: "Swahili", code: "sw" },
+  { name: "Filipino", code: "tl" },
+  { name: "Hebrew", code: "he" },
+  { name: "Persian", code: "fa" }
+];
+---
+
+<Layout title="Supported Languages">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Supported Languages</Fragment>
+      <Fragment slot="desc">
+        We support a wide range of languages to make our platform accessible globally.
+      </Fragment>
+    </Sectionhead>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
+      {languages.map((lang) => (
+        <div class="bg-gray-100 p-4 rounded-lg text-center">
+          <h3 class="font-bold text-lg">{lang.name}</h3>
+          <p class="text-gray-600">Code: {lang.code}</p>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Layout>
