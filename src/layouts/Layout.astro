@@ -20,9 +20,7 @@ const resolvedImageWithDomain = new URL(
 
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | " + "Terms and Conditions Extraction"
-  : "Terms and Conditions Extraction";
+const makeTitle = title || "Terms and Conditions Extraction";
 ---
 
 <!DOCTYPE html>
@@ -47,7 +45,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Extract insights from terms and conditions documents`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {
