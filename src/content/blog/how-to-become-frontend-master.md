@@ -3,8 +3,8 @@ draft: false
 title: "How to Get Bullet Points from a Terms and Conditions PDF"
 snippet: ""
 image: {
-    src: "https://i2-prod.mirror.co.uk/tech/article32776926.ece/ALTERNATES/s1200d/0_WhastApp.jpg",
-    alt: "PDF -> Bullets"
+    src: "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    alt: "PDF to Bullet Points"
 }
 publishDate: "2022-11-07 15:39"
 category: "Tutorials"
@@ -16,10 +16,10 @@ Hey folks,
 
 This is a quick and easy tutorial on how you can turn a complicated terms and conditions document into simple bullet points. Follow these steps, and you’ll have the key points in no time:
 
-1. **Open the WhatsApp Channel**  
-   Click the provided link to open a message to the dedicated business WhatsApp channel. I recommend saving this channel for future use. This will make it easier to access next time you need to simplify a document.
+1. **Open the Telegram Channel**
+   Click the provided link to open a message to the dedicated business Telegram channel. I recommend saving this channel for future use. This will make it easier to access next time you need to simplify a document.
 
-   [Click here to open the WhatsApp channel](https://wa.me/+12895441110)
+   [Click here to open the Telegram channel](https://t.me/C_TLDR_bot)
 
 2. **Attach Your PDF**  
    Once you’ve opened the channel, send a message by attaching the PDF containing the terms and conditions. Make sure the file is complete and readable.
@@ -39,6 +39,6 @@ Simplifying legal or technical documents saves time, reduces confusion, and empo
 
 ---
 
-Ready to simplify your documents? Start now by opening the WhatsApp channel and sending your first PDF!
+Ready to simplify your documents? Start now by opening the Telegram channel and sending your first PDF!
 
-[Click here to open the WhatsApp channel](https://wa.me/+12895441110)
+[Click here to open the Telegram channel](https://t.me/C_TLDR_bot)
